@@ -660,7 +660,7 @@ function library:create_keybind_list()
     local items = library.keybind_list_items
     
     items["main"] = library:create("Frame", {
-        Parent = library["items"],
+        Parent = library["other"],
         Position = dim_offset(10, 150),
         Size = dim_offset(180, 30),
         BackgroundColor3 = rgb(20, 20, 24),
@@ -807,7 +807,7 @@ function library:create_watermark(window_name)
     local items = library.watermark_items
     
     items["main"] = library:create("Frame", {
-        Parent = library["items"],
+        Parent = library["other"],
         Position = dim_offset(10, 10),
         Size = dim_offset(200, 24),
         BackgroundColor3 = rgb(20, 20, 24),
